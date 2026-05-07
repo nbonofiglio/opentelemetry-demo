@@ -62,3 +62,9 @@ test/tracetesting/tracetesting-vars.yaml
 
 !src/currency/build
 
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

@@ -1,5 +1,11 @@
 {
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.1",
     "markdownlint-cli": "^0.48.0"
-  }
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
+  },
+  "scripts": {}
 }
