@@ -5,13 +5,13 @@ import { defineConfig } from 'checkly'
  */
 const config = defineConfig({
   /* A human friendly name for your project */
-  projectName: 'undefined',
+  projectName: 'Astronomy Shop',
   /** A logical ID that needs to be unique across your Checkly account,
   * See https://www.checklyhq.com/docs/cli/constructs/ to learn more about logical IDs.
   */
-  logicalId: 'undefined',
+  logicalId: 'astronomy-shop-1',
   /* An optional URL to your Git repo */
-  repoUrl: 'https://github.com/checkly/checkly-cli',
+  repoUrl: 'https://github.com/nbonofiglio/opentelemetry-demo',
   /* Sets default values for Checks */
   checks: {
     /* A default for how often your Check should run in minutes */
@@ -48,7 +48,7 @@ const config = defineConfig({
   },
   cli: {
     /* The default datacenter location to use when running npx checkly test */
-    runLocation: ['eu-central-1','us-east-1']
+    runLocation: 'us-east-1',
     /* An array of default reporters to use when a reporter is not specified with the "--reporter" flag */
     reporters: ['list'],
     /* How many times to retry a failing test run when running `npx checkly test` or `npx checkly trigger` (max. 3) */
