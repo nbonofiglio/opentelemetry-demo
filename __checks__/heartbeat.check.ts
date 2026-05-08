@@ -8,7 +8,7 @@ import { HeartbeatMonitor } from 'checkly/constructs'
 
 new HeartbeatMonitor('heartbeat-1', {
     name: 'Send weekly newsletter job',
-    activated: false,
+    activated: true,
     period: 1,
     periodUnit: 'hours',
     grace: 30,

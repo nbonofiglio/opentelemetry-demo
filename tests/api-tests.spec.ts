@@ -21,3 +21,16 @@ test('products api check', async ({ request }) => {
   expect(response.ok()).toBeTruthy();
   expect(response.status()).toBe(200);
 });
+
+// GET new deck of cards
+test('deck of cards new deck api check', async ({ request }) => {
+  const response = await request.get('https://deckofcardsapi.com/api/deck/new/');
+
+  expect(response.ok()).toBeTruthy();
+  expect(response.status()).toBe(200);
+
+  const body = await response.json();
+  expect(body.success).toBe(true);
+  expect(body.deck_id).toBeTruthy();
+  expect(body.remaining).toBe(52);
+});
