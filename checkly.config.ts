@@ -48,7 +48,7 @@ const config = defineConfig({
   },
   cli: {
     /* The default datacenter location to use when running npx checkly test */
-    runLocation: 'eu-central-1',
+    runLocation: ['eu-central-1','us-east-1']
     /* An array of default reporters to use when a reporter is not specified with the "--reporter" flag */
     reporters: ['list'],
     /* How many times to retry a failing test run when running `npx checkly test` or `npx checkly trigger` (max. 3) */
